@@ -1,0 +1,53 @@
+from autogluon.tabular import TabularDataset, TabularPredictor
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn import metrics
+from sklearn.metrics import roc_curve, roc_auc_score
+from sklearn.model_selection import train_test_split
+import math
+import pandas as pd
+import random as rd
+import math
+
+
+
+
+df_old = pd.read_csv('https://autogluon.s3.amazonaws.com/datasets/Inc/train.csv')
+
+# column_names = ['age', 'workclass', 'fnlwgt', 'education', 'education-num',
+#                 'marital-status', 'occupation', 'relationship', 'race', 'sex',
+#                 'capital-gain', 'capital-loss', 'hours-per-week', 'native-country', 'class']
+
+
+
+# df_old = pd.read_csv('/content/adult.data' , header = None , names = column_names)
+# df.columns =  column = ['age' , 'workclass' , 'fnlwgt' , 'education-num' , 'marital-status' , 'occupation' , 'relationship', 'race' , 'sex' , 'capital-gain', 'capital-loss', 'hours-per-week', 'native-country' , 'class']
+# Adult dataset is being loaded.
+df = df_old.fillna(0)
+
+print(df)
+# print(df_old1)
+
+## Modify for binary labels
+df['class'].loc[df['class'] == '<=50K'] = 0
+df['class'].loc[df['class'] == '>50K'] = 1
+
+## Create the dataset
+for i in list(df.columns):
+    df[i] = df[i].astype('category').cat.codes
+
+
+## Modify for binary protected attributes
+df['sex'].loc[df['sex'] == 'Male'] = 1
+df['sex'].loc[df['sex'] == 'Female'] = 0
+print(df)
+
+
+
+test_data = TabularDataset('https://autogluon.s3.amazonaws.com/datasets/Inc/test.csv')
+y_test = test_data[label]  # values to predict
+DF = test_data
+test_data_nolab = test_data.drop(columns=[label])  # delete label column to prove we're not cheating
+# test_data_nolab = test_data.drop(columns=[])  # delete label column to prove we're not cheating
+test_data_nolab.head()

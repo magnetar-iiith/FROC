@@ -1,0 +1,275 @@
+\begin{thebibliography}{10}
+
+\bibitem{portugal18}
+Ivens Portugal, Paulo Alencar, and Donald Cowan.
+\newblock The use of machine learning algorithms in recommender systems: A
+  systematic review.
+\newblock {\em Expert Systems with Applications}, 97:205--227, 2018.
+
+\bibitem{berger05}
+Allen~N. Berger, W.~Scott Frame, and Nathan~H. Miller.
+\newblock Credit scoring and the availability, price, and risk of small
+  business credit.
+\newblock {\em Journal of Money, Credit and Banking}, 37(2):191--222, 2005.
+
+\bibitem{angwin16}
+Julia Angwin, Jeff Larson, Lauren Kirchner, and Surya Mattu.
+\newblock Machine bias, May 2016.
+
+\bibitem{dastin18}
+Jeffrey Dastin.
+\newblock Amazon scraps secret ai recruiting tool that showed bias against
+  women, Oct 2018.
+
+\bibitem{bickel75}
+P.~J. Bickel, E.~A. Hammel, and J.~W. O'Connell.
+\newblock Sex bias in graduate admissions: Data from berkeley.
+\newblock {\em Science}, 187(4175):398--404, 1975.
+
+\bibitem{zhao18}
+Jieyu Zhao, Tianlu Wang, Mark Yatskar, Vicente Ordonez, and Kai-Wei Chang.
+\newblock Gender bias in coreference resolution: Evaluation and debiasing
+  methods.
+\newblock In {\em Proceedings of the 2018 Conference of the North {A}merican
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies, Volume 2 (Short Papers)}, pages 15--20, New Orleans, Louisiana,
+  June 2018. Association for Computational Linguistics.
+
+\bibitem{dwork12}
+Cynthia Dwork, Moritz Hardt, Toniann Pitassi, Omer Reingold, and Richard Zemel.
+\newblock Fairness through awareness.
+\newblock In {\em Proceedings of the 3rd Innovations in Theoretical Computer
+  Science Conference}, ITCS '12, page 214–226, New York, NY, USA, 2012.
+  Association for Computing Machinery.
+
+\bibitem{madras2018learning}
+David Madras, Elliot Creager, Toniann Pitassi, and Richard Zemel.
+\newblock Learning adversarially fair and transferable representations.
+\newblock In {\em International Conference on Machine Learning}, pages
+  3384--3393. PMLR, 2018.
+
+\bibitem{feldman15}
+Michael Feldman, Sorelle~A. Friedler, John Moeller, Carlos Scheidegger, and
+  Suresh Venkatasubramanian.
+\newblock Certifying and removing disparate impact.
+\newblock In {\em Proceedings of the 21th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '15, page 259–268, New York,
+  NY, USA, 2015. Association for Computing Machinery.
+
+\bibitem{zemel13}
+Rich Zemel, Yu~Wu, Kevin Swersky, Toni Pitassi, and Cynthia Dwork.
+\newblock Learning fair representations.
+\newblock In Sanjoy Dasgupta and David McAllester, editors, {\em Proceedings of
+  the 30th International Conference on Machine Learning}, volume~28 of {\em
+  Proceedings of Machine Learning Research}, pages 325--333, Atlanta, Georgia,
+  USA, 17--19 Jun 2013. PMLR.
+
+\bibitem{padala21}
+Manisha Padala and Sujit Gujar.
+\newblock Fnnc: Achieving fairness through neural networks.
+\newblock In {\em Proceedings of the Twenty-Ninth International Joint
+  Conference on Artificial Intelligence}, IJCAI'20, 2021.
+
+\bibitem{sleeman95}
+D.~Sleeman, M.~Rissakis, S.~Craw, N.~Graner, and S.~Sharma.
+\newblock Consultant-2: Pre- and post-processing of machine learning
+  applications.
+\newblock {\em Int. J. Hum.-Comput. Stud.}, 43(1):43–63, jul 1995.
+
+\bibitem{nandy22}
+Preetam Nandy, Cyrus DiCiccio, Divya Venugopalan, Heloise Logan, Kinjal Basu,
+  and Noureddine El~Karoui.
+\newblock Achieving fairness via post-processing in web-scale recommender
+  systems.
+\newblock {\em 2022 ACM Conference on Fairness, Accountability, and
+  Transparency}, Jun 2022.
+
+\bibitem{kleinberg17}
+Jon Kleinberg, Sendhil Mullainathan, and Manish Raghavan.
+\newblock Inherent trade-offs in the fair determination of risk scores.
+\newblock In Christos~H. Papadimitriou, editor, {\em 8th Innovations in
+  Theoretical Computer Science Conference ({ITCS} 2017)}, volume~67 of {\em
+  Leibniz International Proceedings in Informatics ({LIPIcs})}, pages
+  43:1--43:23. Schloss Dagstuhl–Leibniz-Zentrum fuer Informatik, 2017.
+
+\bibitem{chouldechova17}
+Alexandra Chouldechova.
+\newblock Fair prediction with disparate impact: A study of bias in recidivism
+  prediction instruments.
+\newblock {\em Big Data}, 5(2):153--163, 2017.
+\newblock PMID: 28632438.
+
+\bibitem{huang05}
+Jin Huang and Charles~X. Ling.
+\newblock Using auc and accuracy in evaluating learning algorithms.
+\newblock {\em IEEE Trans. on Knowl. and Data Eng.}, 17(3):299–310, mar 2005.
+
+\bibitem{clemencon08}
+Stéphan Clémençon, Gábor Lugosi, and Nicolas Vayatis.
+\newblock Ranking and empirical minimization of u-statistics.
+\newblock {\em The Annals of Statistics}, 36(2):844--874, 2008.
+
+\bibitem{zehlike21}
+Meike Zehlike, Ke~Yang, and Julia Stoyanovich.
+\newblock Fairness in ranking: A survey, 2021.
+
+\bibitem{barocas16}
+Solon Barocas and Andrew~D. Selbst.
+\newblock Big data's disparate impact.
+\newblock {\em California Law Review}, 104(3):671--732, 2016.
+
+\bibitem{hardt16}
+Moritz Hardt, Eric Price, and Nathan Srebro.
+\newblock Equality of opportunity in supervised learning.
+\newblock In {\em Proceedings of the 30th International Conference on Neural
+  Information Processing Systems}, NIPS'16, page 3323–3331, Red Hook, NY,
+  USA, 2016. Curran Associates Inc.
+
+\bibitem{verma18}
+Sahil Verma and Julia Rubin.
+\newblock Fairness definitions explained.
+\newblock In {\em Proceedings of the International Workshop on Software
+  Fairness}, FairWare '18, page 1–7, New York, NY, USA, 2018. Association for
+  Computing Machinery.
+
+\bibitem{gorantla21}
+Sruthi Gorantla, Amit Deshpande, and Anand Louis.
+\newblock On the problem of underranking in group-fair ranking.
+\newblock In Marina Meila and Tong Zhang, editors, {\em Proceedings of the 38th
+  International Conference on Machine Learning}, volume 139 of {\em Proceedings
+  of Machine Learning Research}, pages 3777--3787. PMLR, 18--24 Jul 2021.
+
+\bibitem{beutel19}
+Alex Beutel, Jilin Chen, Tulsee Doshi, Hai Qian, Li~Wei, Yi~Wu, Lukasz Heldt,
+  Zhe Zhao, Lichan Hong, Ed~H. Chi, and Cristos Goodrow.
+\newblock Fairness in recommendation ranking through pairwise comparisons.
+\newblock {\em CoRR}, abs/1903.00780, 2019.
+
+\bibitem{borkan19}
+Daniel Borkan, Lucas Dixon, Jeffrey Sorensen, Nithum Thain, and Lucy Vasserman.
+\newblock Nuanced metrics for measuring unintended bias with real data for text
+  classification.
+\newblock In {\em Companion Proceedings of The 2019 World Wide Web Conference},
+  WWW '19, page 491–500, New York, NY, USA, 2019. Association for Computing
+  Machinery.
+
+\bibitem{kallus19}
+Nathan Kallus and Angela Zhou.
+\newblock {\em The Fairness of Risk Scores beyond Classification: Bipartite
+  Ranking and the XAUC Metric}.
+\newblock Curran Associates Inc., Red Hook, NY, USA, 2019.
+
+\bibitem{yang2023minimax}
+Zhenhuan Yang, Yan~Lok Ko, Kush~R Varshney, and Yiming Ying.
+\newblock Minimax auc fairness: Efficient algorithm with provable convergence.
+\newblock In {\em Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~37, pages 11909--11917, 2023.
+
+\bibitem{vogel2021}
+Robin Vogel, Aur{\'e}lien Bellet, and St'ephan Cl'emenccon.
+\newblock Learning fair scoring functions: Bipartite ranking under roc-based
+  fairness constraints.
+\newblock In {\em AISTATS}, 2021.
+
+\bibitem{chen2020towards}
+Mingliang Chen and Min Wu.
+\newblock Towards threshold invariant fair classification.
+\newblock In {\em Conference on Uncertainty in Artificial Intelligence}, pages
+  560--569. PMLR, 2020.
+
+\bibitem{wei20}
+Dennis Wei, Karthikeyan~Natesan Ramamurthy, and Flavio Calmon.
+\newblock Optimized score transformation for fair classification.
+\newblock In Silvia Chiappa and Roberto Calandra, editors, {\em Proceedings of
+  the Twenty Third International Conference on Artificial Intelligence and
+  Statistics}, volume 108 of {\em Proceedings of Machine Learning Research},
+  pages 1673--1683. PMLR, 26--28 Aug 2020.
+
+\bibitem{cui2021}
+Sen Cui, Weishen Pan, Changshui Zhang, and Fei Wang.
+\newblock Towards model-agnostic post-hoc adjustment for balancing ranking
+  fairness and algorithm utility.
+\newblock In {\em Proceedings of the 27th ACM SIGKDD Conference on Knowledge
+  Discovery \& Data Mining}, KDD '21, page 207–217, New York, NY, USA, 2021.
+  Association for Computing Machinery.
+
+\bibitem{zhao2024fair}
+Han Zhao.
+\newblock Fair and optimal prediction via post-processing.
+\newblock In {\em Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~38, pages 22686--22686, 2024.
+
+\bibitem{tifreafrappe}
+Alexandru Tifrea, Preethi Lahoti, Ben Packer, Yoni Halpern, Ahmad Beirami, and
+  Flavien Prost.
+\newblock Frapp{\'e}: A group fairness framework for post-processing
+  everything.
+\newblock In {\em Forty-first International Conference on Machine Learning}.
+
+\bibitem{cruz2023unprocessing}
+Andr{\'e}~F Cruz and Moritz Hardt.
+\newblock Unprocessing seven years of algorithmic fairness.
+\newblock {\em arXiv preprint arXiv:2306.07261}, 2023.
+
+\bibitem{jang22}
+Taeuk Jang, Pengyi Shi, and Xiaoqian Wang.
+\newblock Group-aware threshold adaptation for fair classification.
+\newblock In {\em Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~36, pages 6988--6995, 2022.
+
+\bibitem{mishler2021fairness}
+Alan Mishler, Edward~H Kennedy, and Alexandra Chouldechova.
+\newblock Fairness in risk assessment instruments: Post-processing to achieve
+  counterfactual equalized odds.
+\newblock In {\em Proceedings of the 2021 ACM Conference on Fairness,
+  Accountability, and Transparency}, pages 386--400, 2021.
+
+\bibitem{provost00}
+Foster~J. Provost.
+\newblock Machine learning from imbalanced data sets 101 extended.
+\newblock 2000.
+
+\bibitem{zhou05}
+Zhi-Hua Zhou and Xu-Ying Liu.
+\newblock Training cost-sensitive neural networks with methods addressing the
+  class imbalance problem.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  18(1):63--77, 2006.
+
+\bibitem{cortes03}
+Corinna Cortes and Mehryar Mohri.
+\newblock Auc optimization vs. error rate minimization.
+\newblock In S.~Thrun, L.~Saul, and B.~Sch\"{o}lkopf, editors, {\em Advances in
+  Neural Information Processing Systems}, volume~16. MIT Press, 2003.
+
+\bibitem{fairmlbook19}
+Solon Barocas, Moritz Hardt, and Arvind Narayanan.
+\newblock {\em Fairness and Machine Learning}.
+\newblock fairmlbook.org, 2019.
+
+\bibitem{kendig20002000}
+Keith Kendig.
+\newblock Is a 2000-year-old formula still keeping some secrets?
+\newblock {\em The American Mathematical Monthly}, 107(5):402--415, 2000.
+
+\bibitem{misc_adult_2}
+Barry Becker and Ronny Kohavi.
+\newblock {Adult}.
+\newblock UCI Machine Learning Repository, 1996.
+\newblock {DOI}: https://doi.org/10.24432/C5XW20.
+
+\bibitem{angwin2016machine}
+Julia Angwin, Jeff Larson, Surya Mattu, and Lauren Kirchner.
+\newblock Machine bias: There’s software used across the country to predict
+  future criminals. and it’s biased against blacks. propublica, 23 may, 2016.
+
+\bibitem{alghamdi2022}
+Wael Alghamdi, Hsiang Hsu, Haewon Jeong, Hao Wang, Peter Michalak, Shahab
+  Asoodeh, and Flavio Calmon.
+\newblock Beyond adult and compas: Fair multi-class prediction via information
+  projection.
+\newblock In S.~Koyejo, S.~Mohamed, A.~Agarwal, D.~Belgrave, K.~Cho, and A.~Oh,
+  editors, {\em Advances in Neural Information Processing Systems}, volume~35,
+  pages 38747--38760. Curran Associates, Inc., 2022.
+
+\end{thebibliography}

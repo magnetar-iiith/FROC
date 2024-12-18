@@ -1,0 +1,58 @@
+from autogluon.tabular import TabularDataset, TabularPredictor
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn import metrics
+from sklearn.metrics import roc_curve, roc_auc_score
+from sklearn.model_selection import train_test_split
+import pandas as pd
+
+
+import os
+for dirname, _, filenames in os.walk('/kaggle/input'):
+    for filename in filenames:
+        print(os.path.join(dirname, filename))
+
+
+data = TabularDataset('/content/propublica_data_for_fairml.csv')
+data.info()
+data.columns
+label = 'Two_yr_Recidivism'
+print("Summary of Two_yr_Recidivism variable: \n", data[label].describe())
+#### Train test split ###
+train_ix  = np.random.randint(0, len(data), int(0.8*len(data)))
+# train_ix = range(len(data))
+train = data.iloc[train_ix,:]
+# train_data = train.iloc[train_ix, :]
+train_data = train.iloc[:, [1,2,3,4,5,6,7,8,9,10,11]]
+print(train_data)
+train_labels = train.iloc[:,0]
+# train_labels = train_labels[:, 0]
+print(train_labels)
+
+
+
+test_ix  = np.random.randint(0, len(data), int(0.2*len(data)))
+# train_ix = range(len(data))
+test = data.iloc[train_ix,:]
+test_data = test.iloc[:, [1,2,3,4,5,6,7,8,9,10,11]]
+print(test_data)
+test_labels = test.iloc[:,0]
+assert isinstance(test_labels, (np.ndarray, pd.Series))
+# test_labels = test_labels[:, 0]
+
+
+# train_data = pd.DataFrame(train_data, columns = ['Number_of_Priors', 'score_factor','Age_Above_FourtyFive', 'Age_Below_TwentyFive', 'African_American','Asian', 'Hispanic', 'Native_American', 'Other', 'Female','Misdemeanor'])
+# train_labels = pd.DataFrame(train_labels, columns = ['Two_yr_Recidivism'])
+
+# test_data = pd.DataFrame(test_data, columns = ['Number_of_Priors', 'score_factor','Age_Above_FourtyFive', 'Age_Below_TwentyFive', 'African_American','Asian', 'Hispanic', 'Native_American', 'Other', 'Female','Misdemeanor'])
+# test_labels = pd.DataFrame(test_labels, columns = ['Two_yr_Recidivism'])
+# train_prot =  tf.keras.utils.to_categorical(prot[train_ix, np.newaxis], num_classes=num_classes)
+# train_labels = tf.keras.utils.to_categorical(data[train_ix, -1], num_classes=num_classes)
+# train_labels = np.append(train_labels, train_prot, 1)
+
+# test_ix = np.random.randint(0, len(data), int(0.2*len(data)))
+# test_data = data[test_ix, :-1]
+# test_prot =  tf.keras.utils.to_categorical(prot[test_ix, np.newaxis], num_classes=num_classes)
+# test_labels = tf.keras.utils.to_categorical(data[test_ix, -1], num_classes=num_classes)
+# test_labels = np.append(test_labels, test_prot, 1)
