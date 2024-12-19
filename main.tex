@@ -542,15 +542,12 @@ Now, we elaborate on the above procedure to transport points from $ROC_{up}$ tow
 We provide a geometric algorithm that returns a classifier equivalent to the scoring function $h^*$ in $\mathcal{S}|_s$.%(the solution to the practitioner's optimization problem~\ref{eq:fpp}).
 
 
-
-
-
 \begin{algorithm}
 \caption{\textsc{FairROC Algorithm}}
 \label{alg:fairroc}
 \begin{algorithmic}[1]
-\Require $ROC_{up}$, $ROC_{down}$, $\varepsilon$
-\Ensure $FairROC_{up}$, $FairROC_{down}$
+\State Input: $ROC_{up}$, $ROC_{down}$, $\varepsilon$
+\State Output: $FairROC_{up}$, $FairROC_{down}$
 \State Initialize $i \gets 1$, $k \gets \text{length}(ROC_{up})$
 \State $FairROC_{up} \gets \emptyset$, $FairROC_{down} \gets ROC_{down}$
 
@@ -578,6 +575,42 @@ We provide a geometric algorithm that returns a classifier equivalent to the sco
 
 \end{algorithmic}
 \end{algorithm}
+
+
+
+% \begin{algorithm}
+% \caption{\textsc{FairROC Algorithm}}
+% \label{alg:fairroc}
+% \begin{algorithmic}[1]
+% \Require $ROC_{up}$, $ROC_{down}$, $\varepsilon$
+% \Ensure $FairROC_{up}$, $FairROC_{down}$
+% \State Initialize $i \gets 1$, $k \gets \text{length}(ROC_{up})$
+% \State $FairROC_{up} \gets \emptyset$, $FairROC_{down} \gets ROC_{down}$
+
+% \While{$i < k-1$}
+%     \State $i \gets i+1$
+%     \If{\Call{BoundaryCut}{$i, \varepsilon$} == TRUE}
+%         \State $p_{left}, p_{right} \gets \Call{CutShift}{i, ROC_{up}, ROC_{down}}$
+%         \If{$FPR(\mathcal{Q}_i^{up}) \geq FPR(\mathcal{Q}_i^{down})$}
+%             \State $\widetilde{\mathcal{Q}}_i^{up} \gets p_{right}$
+%         \Else
+%             \State $\widetilde{\mathcal{Q}}_i^{up} \gets p_{left}$
+%         \EndIf
+%     \ElsIf{$\mathcal{Q}_i^{up} \in \Call{Hypograph}{ROC_{down}}$}
+%         \State $\widetilde{\mathcal{Q}}_i^{up} \gets \mathcal{Q}_i^{up}$
+%         \State \textbf{continue}
+%     \Else
+%         \If{$\text{Area}(\square \mathcal{Q}_{i+1}^{up} \mathcal{Q}_{i}^{up} \mathcal{Q}_{i-1}^{up} {L}_i) \geq \text{Area}(\square \mathcal{Q}_{i+1}^{up} \mathcal{Q}_{i}^{up} \mathcal{Q}_{i-1}^{up} {U}_i)$}
+%             \State $\widetilde{\mathcal{Q}}_i^{up} \gets U_i$
+%         \Else
+%             \State $\widetilde{\mathcal{Q}}_i^{up} \gets L_i$
+%         \EndIf
+%     \EndIf
+%     \State $FairROC_{up} \gets \Call{Append}{\widetilde{\mathcal{Q}}_i^{up}}$
+% \EndWhile
+
+% \end{algorithmic}
+% \end{algorithm}
 
 
 
