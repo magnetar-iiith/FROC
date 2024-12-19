@@ -20,10 +20,13 @@
 \setlength{\pdfpageheight}{11in} % DO NOT CHANGE THIS
 %
 % These are recommended to typeset algorithms but not required. See the subsubsection on algorithms. Remove them if you don't have algorithms in your paper.
-\usepackage{algorithm}
-\usepackage{algorithmic}
+% \usepackage{algorithm}
+% \usepackage{algorithmic}
 % \usepackage{algorithm}
 % \usepackage{algpseudocode}
+\usepackage{algorithmx}
+\usepackage{algpseudocode}
+
 
 \usepackage{paralist}
 %
@@ -546,14 +549,14 @@ We provide a geometric algorithm that returns a classifier equivalent to the sco
 \caption{\textsc{FairROC Algorithm}}
 \label{alg:fairroc}
 \begin{algorithmic}[1]
-\State Input: $ROC_{up}$, $ROC_{down}$, $\varepsilon$
-\State Output: $FairROC_{up}$, $FairROC_{down}$
+\Require $ROC_{up}$, $ROC_{down}$, $\varepsilon$
+\Ensure $FairROC_{up}$, $FairROC_{down}$
 \State Initialize $i \gets 1$, $k \gets \text{length}(ROC_{up})$
 \State $FairROC_{up} \gets \emptyset$, $FairROC_{down} \gets ROC_{down}$
 
 \While{$i < k-1$}
     \State $i \gets i+1$
-    \If{\Call{BoundaryCut}{$i, \varepsilon$} == TRUE}
+    \If{\Call{BoundaryCut}{$i, \varepsilon$} = TRUE}
         \State $p_{left}, p_{right} \gets \Call{CutShift}{i, ROC_{up}, ROC_{down}}$
         \If{$FPR(\mathcal{Q}_i^{up}) \geq FPR(\mathcal{Q}_i^{down})$}
             \State $\widetilde{\mathcal{Q}}_i^{up} \gets p_{right}$
@@ -575,6 +578,7 @@ We provide a geometric algorithm that returns a classifier equivalent to the sco
 
 \end{algorithmic}
 \end{algorithm}
+
 
 
 
